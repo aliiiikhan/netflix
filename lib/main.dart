@@ -7,11 +7,17 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(),
+    return const MaterialApp(
+      home: Scaffold(
+        drawer: Text(
+          'data',
+          style: TextStyle(
+            color: Colors.blueGrey,
+          ),
+        ),
+      ),
     );
   }
 }
